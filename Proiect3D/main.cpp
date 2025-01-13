@@ -3,6 +3,8 @@
 #include <cstdlib>
 #include <ctime>
 
+bool isSnowing = false;
+
 // Angles for rotation
 GLfloat angleX = 0.0f;
 GLfloat angleY = 0.0f;
@@ -60,9 +62,42 @@ void drawHouse() {
     glColor3f(0.5f, 0.0f, 0.0f); // Red
     drawPyramid(0.0f, 0.75f, -2.0f, 2.5f, 2.f);
 
+    // Door
+    glColor3f(0.4f, 0.8f, 0.0f); // Dark brown
+    glPushMatrix();
+    glTranslatef(0.0f, -1.25f, -0.77f); // Poziția ușii ajustată
+    glScalef(0.5f, 1.0f, 0.1f);       // Dimensiunile ușii
+    glutSolidCube(1.0f);
+    glPopMatrix();
+
+    // Windows
+    glColor3f(0.0f, 0.5f, 0.8f); // Blue for glass
+    glPushMatrix();
+    glTranslatef(-0.8f, -0.3f, -0.77f); // Poziția ferestrei din stânga ajustată
+    glScalef(0.4f, 0.4f, 0.1f);       // Dimensiunile ferestrei
+    glutSolidCube(1.0f);
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(0.8f, -0.3f, -0.77f); // Poziția ferestrei din dreapta ajustată
+    glScalef(0.4f, 0.4f, 0.1f);       // Dimensiunile ferestrei
+    glutSolidCube(1.0f);
+    glPopMatrix();
+
+    // Chimney (horn)
+    glColor3f(0.5f, 0.2f, 0.2f); // Dark red
+    glPushMatrix();
+    glTranslatef(0.8f, 1.8f, -2.2f); // Poziția hornului pe acoperiș
+    glScalef(0.3f, 1.0f, 0.3f);     // Dimensiunile hornului
+    glutSolidCube(1.0f);
+    glPopMatrix();
+
     // Reset color
     glColor3f(1.0f, 1.0f, 1.0f);
 }
+
+
+
 
 void drawCylinder(GLfloat x, GLfloat y, GLfloat z, GLfloat radius, GLfloat height) {
     glPushMatrix();
@@ -77,24 +112,24 @@ void drawCylinder(GLfloat x, GLfloat y, GLfloat z, GLfloat radius, GLfloat heigh
 void drawChristmasTree() {
     // Trunchiul copacului
     glColor3f(0.4f, 0.2f, 0.1f); // Maro
-    drawCylinder(-2.0f, -1.5f, 0.0f, 0.2f, 1.0f);
+    drawCylinder(2.0f, -1.5f, 3.0f, 0.2f, 1.0f); // Mutat pe (2.0, -1.5, 3.0)
 
     // Frunzișul copacului (conuri poziționate vertical)
     glColor3f(0.0f, 0.8f, 0.0f); // Verde
     glPushMatrix();
-    glTranslatef(-2.0f, -0.7f, 0.0f);  // Poziția de bază a primului con
+    glTranslatef(2.0f, -0.7f, 3.0f); // Poziția de bază a primului con
     glRotatef(-90.0f, 1.0f, 0.0f, 0.0f); // Rotim conul pentru a fi vertical
     glutSolidCone(1.5f, 1.7f, 50, 50);
     glPopMatrix();
 
     glPushMatrix();
-    glTranslatef(-2.0f, 0.3f, 0.0f);  // Poziția celui de-al doilea con
+    glTranslatef(2.0f, 0.3f, 3.0f); // Poziția celui de-al doilea con
     glRotatef(-90.0f, 1.0f, 0.0f, 0.0f); // Rotim conul pentru a fi vertical
     glutSolidCone(1.2f, 1.4f, 50, 50);
     glPopMatrix();
 
     glPushMatrix();
-    glTranslatef(-2.0f, 1.2f, 0.0f);  // Poziția celui de-al treilea con
+    glTranslatef(2.0f, 1.2f, 3.0f); // Poziția celui de-al treilea con
     glRotatef(-90.0f, 1.0f, 0.0f, 0.0f); // Rotim conul pentru a fi vertical
     glutSolidCone(0.8f, 1.f, 50, 50);
     glPopMatrix();
@@ -102,6 +137,7 @@ void drawChristmasTree() {
     // Resetare culoare
     glColor3f(1.0f, 1.0f, 1.0f);
 }
+
 
 void drawSnowman() {
     // Bottom sphere (body)
@@ -138,7 +174,7 @@ void drawSnowflakes() {
         srand(static_cast<unsigned int>(time(0)));
         for (int i = 0; i < numFlakes; ++i) {
             flakes[i][0] = (rand() % 200 - 100) / 10.0f; // X
-            flakes[i][1] = (rand() % 200) / 10.0f;   // Y
+            flakes[i][1] = (rand() % 200) / 10.0f;       // Y
             flakes[i][2] = (rand() % 200 - 100) / 10.0f; // Z
         }
         initialized = true;
@@ -147,13 +183,33 @@ void drawSnowflakes() {
     glColor3f(1.0f, 1.0f, 1.0f);
     for (int i = 0; i < numFlakes; ++i) {
         drawSphere(flakes[i][0], flakes[i][1], flakes[i][2], 0.05f);
-        flakes[i][1] -= 0.02f; // Move down
-        // Check if snowflake reaches the ground (approximately y = -1.5)
-        if (flakes[i][1] < -1.5f) {
-            flakes[i][1] = -1.5f; // Stop at ground level
+        if (isSnowing) {
+            flakes[i][1] -= 0.02f; // Move down
+            if (flakes[i][1] < -1.5f) {
+                flakes[i][1] = 5.0f; // Reset to top when falling below ground
+            }
         }
     }
 }
+
+void timerFunc(int value) {
+    glutPostRedisplay();  // Reîmprospătare ecran
+    glutTimerFunc(16, timerFunc, 0);  // Apelează din nou peste 16 ms (~60 FPS)
+}
+
+
+void mouseFunc(int button, int state, int x, int y) {
+    if (button == GLUT_LEFT_BUTTON) {
+        if (state == GLUT_DOWN) {
+            isSnowing = true;
+        }
+        else if (state == GLUT_UP) {
+            isSnowing = false;
+        }
+    }
+    glutPostRedisplay();
+}
+
 
 void drawGround() {
     // Add snow texture to the ground
@@ -244,6 +300,9 @@ int main(int argc, char** argv) {
 
     glutDisplayFunc(display);
     glutSpecialFunc(keyboardSpecial);
+    glutMouseFunc(mouseFunc);
+    glutTimerFunc(16, timerFunc, 0);
+
 
     glutMainLoop();
     return 0;
