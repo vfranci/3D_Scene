@@ -138,7 +138,7 @@ void drawSnowflakes() {
         srand(static_cast<unsigned int>(time(0)));
         for (int i = 0; i < numFlakes; ++i) {
             flakes[i][0] = (rand() % 200 - 100) / 10.0f; // X
-            flakes[i][1] = (rand() % 200 - 100) / 10.0f; // Y
+            flakes[i][1] = (rand() % 200) / 10.0f;   // Y
             flakes[i][2] = (rand() % 200 - 100) / 10.0f; // Z
         }
         initialized = true;
@@ -148,12 +148,16 @@ void drawSnowflakes() {
     for (int i = 0; i < numFlakes; ++i) {
         drawSphere(flakes[i][0], flakes[i][1], flakes[i][2], 0.05f);
         flakes[i][1] -= 0.02f; // Move down
-        if (flakes[i][1] < -5.0f) flakes[i][1] = 5.0f; // Reset to top
+        // Check if snowflake reaches the ground (approximately y = -1.5)
+        if (flakes[i][1] < -1.5f) {
+            flakes[i][1] = -1.5f; // Stop at ground level
+        }
     }
 }
 
 void drawGround() {
-    glColor3f(0.3f, 0.8f, 0.3f); // Green ground
+    // Add snow texture to the ground
+    glColor3f(1.0f, 1.0f, 1.0f); // White for snow
     glPushMatrix();
     glTranslatef(0.0f, -1.5f, 0.0f); // Position the ground
     glBegin(GL_QUADS);
