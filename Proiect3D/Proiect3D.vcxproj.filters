@@ -1480,4 +1480,24 @@
       <Filter>Resource Files\template-built-ins\DLLs\64b</Filter>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\Downloads\brick_texture.jpg">
+      <Filter>Resource Files\textures</Filter>
+    </Image>
+    <Image Include="door.jpg">
+      <Filter>Resource Files\textures</Filter>
+    </Image>
+    <Image Include="window.jpg">
+      <Filter>Resource Files\textures</Filter>
+    </Image>
+    <Image Include="window1.jpg">
+      <Filter>Resource Files\textures</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\door1.jpg">
+      <Filter>Resource Files\textures</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\tree.jpg">
+      <Filter>Resource Files\textures</Filter>
+    </Image>
+  </ItemGroup>
 </Project>

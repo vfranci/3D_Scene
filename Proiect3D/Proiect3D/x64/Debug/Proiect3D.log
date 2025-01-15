@@ -9,6 +9,72 @@
   C:SOIL.dll
   1 File(s) copied
   main.cpp
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(355,23): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(368,24): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(369,24): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(620,21): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(640,21): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(640,16): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(642,21): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(642,16): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(643,21): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(643,16): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(646,22): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(646,17): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(648,22): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(648,17): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(649,22): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(649,17): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(658,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(658,20): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(658,15): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(659,31): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(659,26): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(662,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(662,20): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(662,15): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(663,37): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(663,27): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(663,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(666,20): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(666,15): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(668,51): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(668,44): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(668,35): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(668,22): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(669,51): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(669,44): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(669,35): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(669,22): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(674,37): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(674,27): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(674,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(677,20): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(677,15): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(678,39): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(678,28): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(678,19): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(684,15): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(687,24): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(692,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(692,20): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(692,15): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(695,37): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(695,27): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(696,28): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(696,23): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(703,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(703,21): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(704,23): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(704,18): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(705,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(705,21): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(710,23): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(716,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(901,28): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\main.cpp(913,19): warning C4305: 'initializing': truncation from 'double' to 'float'
+SOIL.lib(image_DXT.obj) : warning LNK4099: PDB '' was not found with 'SOIL.lib(image_DXT.obj)' or at ''; linking object as if no debug info
+SOIL.lib(stb_image_aug.obj) : warning LNK4099: PDB '' was not found with 'SOIL.lib(stb_image_aug.obj)' or at ''; linking object as if no debug info
   Proiect3D.vcxproj -> C:\Users\Sol\Documents\GitHub\3D_Scene\Proiect3D\x64\Debug\Proiect3D.exe
   0 File(s) copied
   0 File(s) copied

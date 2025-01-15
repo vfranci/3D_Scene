@@ -1,10 +1,11 @@
-// Shader-ul de fragment / Fragment shader 
 #version 330 core
 
-in vec4 ex_Color;
-out vec4 out_Color;
+in vec2 TexCoord;  // Coordonatele texturii primite de la vertex shader
 
-void main(void)
-  {
-    out_Color = ex_Color;
-  }
+out vec4 FragColor; // Culorile finale ale pixelilor
+
+uniform sampler2D texture1; // Textura de aplicat
+
+void main() {
+    FragColor = texture(texture1, TexCoord); // Aplică textura
+}

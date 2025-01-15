@@ -1,14 +1,15 @@
-// Shader-ul de varfuri / Vertex shader
 #version 330 core
 
-layout (location = 0) in vec4 in_Position;
-layout (location = 1) in vec4 in_Color;
+layout (location = 0) in vec3 aPos;  // Pozițiile vertecilor
+layout (location = 1) in vec2 aTexCoord; // Coordonatele texturii
 
-out vec4 gl_Position; 
-out vec4 ex_Color;
+out vec2 TexCoord;  // Ieșirea coordonatelor texturii
 
-void main ()
-{
-   gl_Position = in_Position;
-   ex_Color = in_Color;
+uniform mat4 model;   // Matricea modelului
+uniform mat4 view;    // Matricea vederii
+uniform mat4 projection; // Matricea proiecției
+
+void main() {
+    gl_Position = projection * view * model * vec4(aPos, 1.0);  // Calculul poziției finale
+    TexCoord = aTexCoord;  // Transmiterea coordonatelor texturii
 }
